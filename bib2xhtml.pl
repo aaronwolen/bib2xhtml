@@ -1242,7 +1242,7 @@ sub domath {
         s/\\ldots\b\s*/…/g;			# Horizontal ellipsis
         s/\\dots\b\s*/…/g;			# Horizontal ellipsis
     } else {
-        s/([^\\])~/$1/g;			# ~  non-breaking space
+        s/([^\\])~/$1&nbsp;/g;			# ~  non-breaking space
         s/\\\,/&thinsp;/g;			# \, thin space
         s/\\ldots\b/&hellip;/g;			# Horizontal ellipsis
 	s/\\dots\b/&hellip;/g;			# Horizontal ellipsis
