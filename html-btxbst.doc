@@ -94,7 +94,7 @@
 % plain style (sorted numbers)
 #   define LAB_ALPH 0
 #   define SORTED 1
-#   define NAME_FULL 1
+#   define NAME_FULL 0
 #   define ATIT_LOWER 1
 #   define MONTH_FULL 1
 #   define JOUR_FULL 1
@@ -103,7 +103,7 @@
 % unsrt style (unsorted numbers)
 #   define LAB_ALPH 0
 #   define SORTED 0
-#   define NAME_FULL 1
+#   define NAME_FULL 0
 #   define ATIT_LOWER 1
 #   define MONTH_FULL 1
 #   define JOUR_FULL 1
@@ -112,7 +112,7 @@
 % alpha style (sorted short alphabetics)
 #   define LAB_ALPH 1
 #   define SORTED 1
-#   define NAME_FULL 1
+#   define NAME_FULL 0
 #   define ATIT_LOWER 1
 #   define MONTH_FULL 1
 #   define JOUR_FULL 1
@@ -131,7 +131,7 @@
  % Some code for this was taken from "named.bst".
 #   define LAB_ALPH 1
 #   define SORTED 1
-#   define NAME_FULL 1
+#   define NAME_FULL 0
 #   define ATIT_LOWER 1
 #   define MONTH_FULL 1
 #   define JOUR_FULL 1
