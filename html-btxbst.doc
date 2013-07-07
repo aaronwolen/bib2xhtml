@@ -738,7 +738,7 @@ FUNCTION {new.sentence.checkb}
 %				% for full names:
 %	    t := format.name$(s, nameptr, "{vv~}{ll}{, jj}{, ff}")
 %				% for abbreviated first names:
-%	    t := format.name$(s, nameptr, "{vv~}{ll}{, jj}{, f.~}")
+%	    t := format.name$(s, nameptr, "{vv~}{ll}{, jj}{, f.}")
 %	    if nameptr > 1 then
 %		if namesleft > 1 then nameresult := nameresult * ", " * t
 %		else if numnames > 2
@@ -848,7 +848,7 @@ FUNCTION {format.names}
 #if NAME_FULL
     { s nameptr "{vv~}{ll}{, jj}{, ff}" format.name$ 't :=
 #else
-    { s nameptr "{vv~}{ll}{, jj}{, f.~}" format.name$ 't :=
+    { s nameptr "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=
 #endif NAME_FULL
       "\bibxhtmlname{" t * "}" * 't :=
       nameptr #1 >
